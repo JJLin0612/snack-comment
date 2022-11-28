@@ -29,5 +29,10 @@ public class TbShopController {
     @Autowired
     private TbShopMapper tbShopMapper;
 
+    @GetMapping
+    public Result tbShopList() {
+        List<TbShop> shopList = tbShopMapper.selectList(null);
+        return Result.ok().data("shopList", shopList);
+    }
 }
 
