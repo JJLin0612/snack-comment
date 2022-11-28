@@ -1,0 +1,22 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+# 应用名称
+spring:
+  application:
+    name: snack_comment
+
+#MySQL参数配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/debate_redis?serverTimezone=GMT%2B8
+    username: root
+    password: "0612"
+
+#是否开启swagger2的web页面
+swagger:
+    enable: true
+
+#日志输出级别
+
+
