@@ -29,12 +29,5 @@ public class TbShopController {
     @Autowired
     private TbShopMapper tbShopMapper;
 
-    @GetMapping
-    public Result getShopList() {
-        QueryWrapper<TbShop> wrapper = new QueryWrapper<>();
-        wrapper.eq("id", 1);
-        List<TbShop> shopList = tbShopMapper.selectList(wrapper);
-        return Result.ok().data("list", shopList);
-    }
 }
 
